@@ -1,0 +1,11 @@
+html, body {
+  background: #eee image-url("grid.png") repeat;
+}
+
+#application-container {
+  background: white;
+  height: $screen-width;
+  width: $screen-height;
+  margin: 0 auto;
+  @include box-shadow(lighten(#333, 10%) 0 0 30px);
+}

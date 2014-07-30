@@ -1,0 +1,6 @@
+/ - index
+/ - articles.html
+  \ - title.md
+    - another-title.md
+/ - videos.html
+  \ -> automated through config.rb

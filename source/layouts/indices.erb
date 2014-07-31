@@ -2,4 +2,6 @@
   <%= partial "shared/indices/top_bar", locals: {title: "Μάθετε για τον καφέ"} %>
 
   <%= yield %>
+
+  <%= partial "shared/bottom_bar", locals: {available_controls: [:homepage]} %>
 <% end %>

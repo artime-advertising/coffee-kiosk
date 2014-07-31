@@ -2,3 +2,37 @@
 layout: indices
 ---
 
+<div class="row no-gutter">
+  <div class="small-12 columns">
+
+    <ul class="small-block-grid-2 catalogue">
+
+      <% 8.times do |i|%>
+        <li>
+          <% link_to "#" do %>
+
+            <div class="row no-gutter">
+
+              <div class="small-4 columns">
+                <div class="thumbnail" style="background-image: url(http://lorempixel.com/400/400/sports/<%= i %>/)">
+                  <%= image_tag "controls/index-pointer.png", class: 'pointer' %>
+                </div>
+              </div>
+
+              <div class="small-8 columns">
+                <div class="content">
+                  <%= lorem.sentence %>
+                </div>
+              </div>
+
+            </div>
+
+          <% end %>
+
+        </li>
+      <% end %>
+
+    </ul>
+
+  </div>
+</div>

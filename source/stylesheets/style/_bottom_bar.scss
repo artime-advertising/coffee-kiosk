@@ -1,0 +1,63 @@
+// Massive mixin follows!
+@mixin homepage-control($bg, $direction: left) {
+  @include button($radius:50px);
+  background: $bg;
+  color: white;
+  font-weight: bold;
+  margin: 0;
+  position: relative;
+
+  @include transition-duration(0.3s);
+
+  @if $direction == left {
+    padding: 10px 30px 10px 50px;
+    left: 35px;
+  }
+  @if $direction == right {
+    padding: 10px 50px 10px 30px;
+    right: 35px;
+  }
+
+  &:hover, &:focus, &:active {
+    background: darken($bg, 15%);
+    span {background: darken($bg, 25%);}
+  }
+
+  span {
+    $height: 70px;
+    $border-width: 8px;
+    background: $bg;
+    border-radius: $height;
+    border: $border-width solid darken($bg, 25%);
+    display: table;
+    font-size: 1.5em;
+    height: $height; width: $height;
+    line-height: $height - ($border-width*2);
+    vertical-align: middle;
+    position: absolute; bottom: -13px;
+
+    @include transition-duration(0.3s);
+
+    @if $direction == left {
+      left: -35px
+    }
+    @if $direction == right {
+      right: -35px;
+    }
+  }
+}
+
+#bottom-nav-bar {
+  background: $light-brown;
+  border-top: 1px solid $brown;
+  bottom: 0;
+  left: 0;
+  padding: 30px 30px;
+  position: absolute;
+  right: 0;
+
+  #homepage {
+    @include homepage-control(#C49A6C);
+  }
+
+}

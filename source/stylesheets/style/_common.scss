@@ -2,10 +2,25 @@ html, body {
   background: #eee image-url("grid.png") repeat;
 }
 
+.row.no-gutter {
+  .columns {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+  }
+}
+
+
 #application-container {
   background: white;
-  height: $screen-width;
-  width: $screen-height;
+  height: $screen-height;
+  width: $screen-width;
   margin: 0 auto;
   @include box-shadow(lighten(#333, 10%) 0 0 30px);
+}
+
+// Helper & Utility Classes
+
+.full-width-spacer {
+  height: 4px;
+  width: 100%;
 }

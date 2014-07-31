@@ -1,0 +1,56 @@
+@mixin homepage-tile {
+  min-height: 510px;
+  background-size: contain;
+}
+
+@mixin homepage-link {
+  text-align: center;
+  .image {
+    padding: 50px 10px 60px;
+  }
+  .body {
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+    .big {
+      font-size: 1.5em;
+    }
+  }
+}
+
+.index {
+  #article-brand {
+    @include homepage-tile;
+    background: image-url("http://placehold.it/600x600/345645/000000") center no-repeat;
+  }
+  #video-brand {
+    @include homepage-tile;
+    background: image-url("http://placehold.it/600x600/983476/000000") center no-repeat;
+  }
+  #promo-brand {
+    @include homepage-tile;
+    background: $promo image-url("shopping-cart.svg") center no-repeat;
+    background-size: 50%;
+  }
+
+  #article-link {
+    @include homepage-tile;
+    @include homepage-link;
+
+    background: $dark-brown;
+  }
+  #video-link {
+    @include homepage-tile;
+    @include homepage-link;
+
+    background: $brown;
+  }
+  #promo-link {
+    @include homepage-tile;
+    @include homepage-link;
+
+    background: $promo;
+  }
+
+}
+

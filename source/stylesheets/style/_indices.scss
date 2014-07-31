@@ -1,0 +1,32 @@
+.articles, .videos {
+  .top-primary-bar {
+    color: white;
+    position: relative;
+    text-align: right;
+
+    h1 {
+      color: inherit;
+      font-weight: bold;
+      padding: 0;
+      margin: 0;
+    }
+    .title {
+      background: $dark-brown;
+      padding: 35px 40px 10px;
+      width: 100%;
+    }
+
+    .subtitle {
+      background: $brown;
+      font-weight: bold;
+      padding: 5px 40px 5px;
+      width: 100%;
+    }
+
+    img {
+      position: absolute;
+      top: 0;
+      left: 60px;
+    }
+  }
+}

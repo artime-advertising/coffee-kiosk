@@ -1,5 +1,6 @@
 html, body {
   background: #eee image-url("grid.png") repeat;
+  @include user-select('none');
 }
 
 .row.no-gutter {
@@ -11,11 +12,12 @@ html, body {
 
 
 #application-container {
+  @include box-shadow(lighten(#333, 10%) 0 0 30px);
   background: white;
   height: $screen-height;
-  width: $screen-width;
   margin: 0 auto;
-  @include box-shadow(lighten(#333, 10%) 0 0 30px);
+  position: relative;
+  width: $screen-width;
 }
 
 // Helper & Utility Classes

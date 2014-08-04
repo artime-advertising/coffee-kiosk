@@ -32,11 +32,14 @@ configure :development do
   activate :livereload
 end
 
-# helpers do
-#   def some_helper
-#     "Helping"
-#   end
-# end
+
+helpers do
+
+  def markdown
+    Kramdown::Document.new(yield).to_html
+  end
+
+end
 
 sprockets.append_path File.join root, 'vendor'
 

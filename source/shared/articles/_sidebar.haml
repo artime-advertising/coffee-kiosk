@@ -1,0 +1,7 @@
+#sidebar
+  .image-container
+    = image_tag image
+
+  .text-container
+    :markdown
+      #{yield_content :sidebar}

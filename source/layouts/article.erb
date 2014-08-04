@@ -1,0 +1,10 @@
+<% wrap_layout :layout do %>
+  <%= partial "shared/articles/top_bar", locals: {title: current_page.data[:title]} %>
+  <%= partial "shared/articles/sidebar", locals: {image: current_page.data[:image]} %>
+
+  <div id="main-wrapper">
+    <%= yield %>
+  </div>
+
+  <%= partial "shared/bottom_bar", locals: {available_controls: [:back_to_articles, :previous_page, :next_page]} %>
+<% end %>

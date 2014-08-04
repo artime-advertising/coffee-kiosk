@@ -59,4 +59,16 @@
     @include homepage-control(#C49A6C, $dark-brown, #C49A6C);
   }
 
+  #back-to-articles {
+    @include homepage-control(#A7A9AC, #A7A9AC, #6D6E71);
+  }
+
+  #previous-page {
+    @include homepage-control(#C49A6C, #A97B50, $dark-brown);
+  }
+
+  #next-page {
+    @include homepage-control(#C49A6C, #A97B50, $dark-brown, right);
+  }
+
 }

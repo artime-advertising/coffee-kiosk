@@ -2,9 +2,14 @@
   <div class="row">
     <div class="small-6 columns">
       <%= partial "shared/controls/bottom-bar-homepage" if available_controls.include?(:homepage) %>
+      <%= partial "shared/controls/bottom-bar-back-to-articles" if available_controls.include?(:back_to_articles) %>
     </div>
 
-    <div class="small-3 columns"></div>
-    <div class="small-3 columns"></div>
+    <div class="small-3 columns">
+      <%= partial "shared/controls/bottom-bar-previous-page" if available_controls.include?(:previous_page) %>
+    </div>
+    <div class="small-3 columns text-right">
+      <%= partial "shared/controls/bottom-bar-next-page" if available_controls.include?(:next_page) %>
+    </div>
   </div>
 </section>

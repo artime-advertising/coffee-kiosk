@@ -1,0 +1,36 @@
+.articles {
+  #sidebar {
+    position: absolute; top: 0; left: 0;
+    width: 550px;
+
+    .text-container {
+      background: #DE761C;
+      border-radius: 0 35px 35px 0;
+      color: white;
+      font-size: 1.5em;
+      font-weight: bold;
+      height: 255px;
+      line-height: 1.1em;
+      padding: 30px 30px 30px 55px;
+      position: relative; top: -35px;
+      p {
+        font-weight: inherit; font-size: inherit; line-height: inherit;
+      }
+    }
+  }
+
+  #main-wrapper {
+    background: white image-url("coffee-beans-dark.png") no-repeat;
+    background-position: 595px 30px;
+    height: 815px;
+    overflow: hidden;
+    padding: 20px 20px 20px 670px;
+
+    h1, h2, h3, h4 {
+      color: $dark-brown;
+      font-weight: bold;
+      font-size: 36px;
+    }
+  }
+
+}

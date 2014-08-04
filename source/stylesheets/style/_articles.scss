@@ -7,14 +7,22 @@
       background: #DE761C;
       border-radius: 0 35px 35px 0;
       color: white;
-      font-size: 1.5em;
       font-weight: bold;
       height: 255px;
       line-height: 1.1em;
       padding: 30px 30px 30px 55px;
       position: relative; top: -35px;
+
+      h1, h2, h3, h4, h5, h6 {
+        color: inherit;
+        font-size: 30px;
+        font-weight: bold;
+      }
+
       p {
-        font-weight: inherit; font-size: inherit; line-height: inherit;
+        font-size: 18px;
+        font-weight: bold;
+        line-height: 1.1em;
       }
     }
   }
@@ -24,7 +32,11 @@
     background-position: 595px 30px;
     height: 815px;
     overflow: hidden;
-    padding: 20px 20px 20px 670px;
+
+    .page {
+      height: 815px;
+      padding: 20px 20px 20px 670px;
+    }
 
     h1, h2, h3, h4 {
       color: $dark-brown;

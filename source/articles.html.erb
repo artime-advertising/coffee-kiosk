@@ -7,21 +7,21 @@ layout: indices
 
     <ul class="small-block-grid-2 catalogue">
 
-      <% 8.times do |i|%>
+      <% sitemap.where(:layout => "article").all.each do |article|%>
         <li>
-          <% link_to "#" do %>
+          <% link_to article.url do %>
 
             <div class="row no-gutter">
 
               <div class="small-5 columns">
-                <div class="thumbnail" style="background-image: url(http://lorempixel.com/400/400/sports/<%= i %>/)">
+                <div class="thumbnail" style="background-image: url(<%= image_path(article.data[:thumbnail]) %>)">
                   <%= image_tag "controls/index-pointer.png", class: 'pointer' %>
                 </div>
               </div>
 
               <div class="small-7 columns">
                 <div class="content">
-                  <%= lorem.sentence %>
+                  <%= article.data[:title] %>
                 </div>
               </div>
 

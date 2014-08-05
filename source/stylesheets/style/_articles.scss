@@ -1,7 +1,12 @@
 .articles {
   #sidebar {
-    position: absolute; top: 0; left: 0;
+    position: absolute; top: 0; bottom: 0; left: 0;
     width: 550px;
+
+    .secondary-image-container {
+      position: absolute;
+      bottom: 0;
+    }
 
     .text-container {
       background: #DE761C;
@@ -12,6 +17,7 @@
       line-height: 1.1em;
       padding: 30px 30px 30px 55px;
       position: relative; top: -35px;
+      z-index: 9;
 
       h1, h2, h3, h4, h5, h6 {
         color: inherit;
@@ -26,6 +32,13 @@
         line-height: 1.1em;
       }
     }
+
+    &.dual-image {
+      .text-container {
+        height: 250px;
+      }
+    }
+
   }
 
   #main-wrapper {

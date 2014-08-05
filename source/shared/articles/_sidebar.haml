@@ -1,7 +1,11 @@
-#sidebar
+#sidebar{class: ("dual-image" if secondary_image) }
   .image-container
     = image_tag image
 
   .text-container
     :markdown
       #{yield_content :sidebar}
+
+  - if secondary_image
+    .secondary-image-container
+      = image_tag secondary_image

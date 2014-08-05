@@ -13,7 +13,7 @@
 
   <div class="small-4 columns" id="article-link" data-link>
     <div class="image">
-      <% link_to "/articles.html" do %>
+      <% link_to sitemap.find_resource_by_path("/articles.html") do %>
         <%= image_tag lorem.image("220x220") %>
       <% end %>
     </div>

@@ -6,7 +6,7 @@
 
       .dynamic-container {
         display: inline-block;
-        height: 40px;
+        height: 45px;
         width: 670px;
         h1 {
           display: inline;
@@ -70,9 +70,13 @@
 
     h1, h2, h3, h4 {
       color: $dark-brown;
-      font-weight: bold;
       font-size: 36px;
+      font-weight: bold;
+      line-height: 1.2em;
     }
+
+    ol {list-style: decimal;}
+    ul {list-style: disc;}
   }
 
 }

@@ -21,11 +21,11 @@
 .index {
   #article-brand {
     @include homepage-tile;
-    background: image-url("http://placehold.it/600x600/345645/000000") center no-repeat;
+    background: image-url("homepage/part1.jpg") center no-repeat;
   }
   #video-brand {
     @include homepage-tile;
-    background: image-url("http://placehold.it/600x600/983476/000000") center no-repeat;
+    background: image-url("homepage/part2.jpg") center no-repeat;
   }
   #promo-brand {
     @include homepage-tile;

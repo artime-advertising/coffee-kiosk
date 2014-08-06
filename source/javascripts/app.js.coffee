@@ -5,11 +5,14 @@
 #= require 'jquery.scrollTo/jquery.scrollTo'
 #= require 'modernizr/modernizr'
 #= require 'foundation/js/foundation'
+#= require 'jquery-textfill/source/jquery.textfill.js'
 
 #= require_self
 
 $(document).ready ->
   $(document).foundation()
+
+  # This handles pages
 
   $(".page").first().attr("data-current","true")
 
@@ -30,3 +33,9 @@ $(document).ready ->
         .prevAll(".page").first().attr("data-current","true")
         .parents("#main-wrapper").scrollTo($(".page[data-current]").first(),800)
       $("#main-wrapper .page[data-current]").last().removeAttr("data-current")
+
+
+  # This handles dynamic title font-size
+
+  $(".articles .dynamic-container").textfill
+    innerTag: 'h1'

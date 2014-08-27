@@ -47,7 +47,7 @@
 }
 
 #bottom-nav-bar {
-  background: $light-brown;
+  background: none;
   border-top: 1px solid $brown;
   bottom: 0;
   left: 0;
@@ -71,4 +71,7 @@
     @include homepage-control(#C49A6C, #A97B50, $dark-brown, right);
   }
 
+}
+
+.articles #bottom-nav-bar {
 }

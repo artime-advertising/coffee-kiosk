@@ -92,3 +92,159 @@
   }
 
 }
+
+// Per article color schemes
+
+.articles.articles_egkyos {
+  .top-primary-bar .title {
+    background: #A27EAE;
+  }
+  #sidebar > .text-container {
+    background: #A97B50;
+  }
+  #main-wrapper h1, #main-wrapper h2, #main-wrapper h3, #main-wrapper h4, #main-wrapper h5, #main-wrapper h6, #main-wrapper a {
+    color: #A27EAE;
+  }
+
+  #bottom-nav-bar {
+    #previous-page {
+      @include homepage-control(#A27EAE, #A27EAE, #775C80);
+    }
+
+    #next-page {
+      @include homepage-control(#A27EAE, #A27EAE, #775C80, right);
+    }
+  }
+}
+
+.articles.articles_mithoi-alithies {
+  .top-primary-bar .title {
+    background: #E07E27;
+  }
+  #sidebar > .text-container {
+    background: #A97B50;
+  }
+  #main-wrapper h1, #main-wrapper h2, #main-wrapper h3, #main-wrapper h4, #main-wrapper h5, #main-wrapper h6, #main-wrapper a, #main-wrapper .emphasis {
+    color: #E07E27;
+  }
+
+  #bottom-nav-bar {
+    #previous-page {
+      @include homepage-control(#E07E27, #E07E27, #A35B1C);
+    }
+
+    #next-page {
+      @include homepage-control(#E07E27, #E07E27, #A35B1C, right);
+    }
+  }
+}
+
+.articles.articles_ayksiste-tis-epidoseis-sas {
+  .top-primary-bar .title {
+    background: #51A090;
+  }
+  #sidebar > .text-container {
+    background: #A97B50;
+  }
+  #main-wrapper h1, #main-wrapper h2, #main-wrapper h3, #main-wrapper h4, #main-wrapper h5, #main-wrapper h6, #main-wrapper a, #main-wrapper .emphasis {
+    color: #51A090;
+  }
+
+  #bottom-nav-bar {
+    #previous-page {
+      @include homepage-control(#51A090, #51A090, #33665C);
+    }
+
+    #next-page {
+      @include homepage-control(#51A090, #51A090, #33665C, right);
+    }
+  }
+}
+
+.articles.articles_kittaritida {
+  .top-primary-bar .title {
+    background: #F287B7;
+  }
+  #sidebar > .text-container {
+    background: #A97B50;
+  }
+  #main-wrapper h1, #main-wrapper h2, #main-wrapper h3, #main-wrapper h4, #main-wrapper h5, #main-wrapper h6, #main-wrapper a, #main-wrapper .emphasis {
+    color: #F287B7;
+  }
+
+  #bottom-nav-bar {
+    #previous-page {
+      @include homepage-control(#F287B7, #F287B7, #BB7293);
+    }
+
+    #next-page {
+      @include homepage-control(#F287B7, #F287B7, #BB7293, right);
+    }
+  }
+}
+
+.articles.articles_diavitis {
+  .top-primary-bar .title {
+    background: #3AA7CD;
+  }
+  #sidebar > .text-container {
+    background: #A97B50;
+  }
+  #main-wrapper h1, #main-wrapper h2, #main-wrapper h3, #main-wrapper h4, #main-wrapper h5, #main-wrapper h6, #main-wrapper a, #main-wrapper .emphasis {
+    color: #3AA7CD;
+  }
+
+  #bottom-nav-bar {
+    #previous-page {
+      @include homepage-control(#3AA7CD, #3AA7CD, #398FAC);
+    }
+
+    #next-page {
+      @include homepage-control(#3AA7CD, #3AA7CD, #398FAC, right);
+    }
+  }
+}
+
+.articles.articles_prasinos-kafes {
+  .top-primary-bar .title {
+    background: #93C789;
+  }
+  #sidebar > .text-container {
+    background: #A97B50;
+  }
+  #main-wrapper h1, #main-wrapper h2, #main-wrapper h3, #main-wrapper h4, #main-wrapper h5, #main-wrapper h6, #main-wrapper a, #main-wrapper .emphasis {
+    color: #93C789;
+  }
+
+  #bottom-nav-bar {
+    #previous-page {
+      @include homepage-control(#93C789, #93C789, #5A9F4D);
+    }
+
+    #next-page {
+      @include homepage-control(#93C789, #93C789, #5A9F4D, right);
+    }
+  }
+}
+
+.articles.articles_stigmiaios-kafes {
+  .top-primary-bar .title {
+    background: #A97B50;
+  }
+  #sidebar > .text-container {
+    background: #A27EAE;
+  }
+  #main-wrapper h1, #main-wrapper h2, #main-wrapper h3, #main-wrapper h4, #main-wrapper h5, #main-wrapper h6, #main-wrapper a, #main-wrapper .emphasis {
+    color: #A97B50;
+  }
+
+  #bottom-nav-bar {
+    #previous-page {
+      @include homepage-control(#A97B50, #A97B50, #8D5F32);
+    }
+
+    #next-page {
+      @include homepage-control(#A97B50, #A97B50, #8D5F32, right);
+    }
+  }
+}

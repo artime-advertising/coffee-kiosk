@@ -92,17 +92,6 @@
         @include transition-duration(0.3s);
       }
 
-      &:hover {
-        .content {
-          border-left: 10px solid $light-brown;
-        }
-
-        .pointer {
-          right: 50%;
-          margin-right: -32.5px;
-        }
-      }
-
     }
 
   }

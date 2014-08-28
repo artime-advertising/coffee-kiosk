@@ -7,7 +7,9 @@ layout: indices
 
     <ul class="small-block-grid-2 catalogue">
 
-      <% sitemap.where(:layout => "article").all.each do |article|%>
+      <% articles = sitemap.where(:layout => "article").all.sort_by {|r| r.data["order"]} %>
+
+      <% articles.each do |article|%>
         <li>
           <% link_to article.url do %>
 

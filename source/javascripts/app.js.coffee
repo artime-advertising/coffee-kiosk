@@ -48,6 +48,12 @@ $(document).ready ->
 
   $(".articles .dynamic-container").textfill
     innerTag: 'h1'
+    
+  # Handle return to main menu
+  window.setInterval ->
+    homepage = $("[data-return]").attr "href"
+    document.location.href = homepage if homepage?
+  , 5 * 60 * 1000
 
 handlePageControls = ->
   has_next = !$("#main-wrapper .page[data-current]").first().is(":last-child")

@@ -22,6 +22,7 @@
   #article-brand {
     @include homepage-tile;
     background: image-url("homepage/part1.jpg") center no-repeat;
+    background-size: cover !important;
   }
   #video-brand {
     @include homepage-tile;
@@ -29,8 +30,8 @@
   }
   #promo-brand {
     @include homepage-tile;
-    background: $promo image-url("shopping-cart.svg") center no-repeat;
-    background-size: 50%;
+    background: $promo image-url('homepage/MrGrandProionta-01.png') center no-repeat;
+    background-size: 70% !important;
   }
 
   #article-link {
@@ -49,7 +50,13 @@
     @include homepage-tile;
     @include homepage-link;
 
-    background: $promo;
+    background: $promo image-url('homepage/OiProsforesMas.png') center no-repeat;
+    background-size: 90% !important;
+    a {
+      display: block;
+      height: 510px;
+      width: 640px;
+    }
   }
 
 }

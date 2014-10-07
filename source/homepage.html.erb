@@ -2,16 +2,15 @@
 ---
 
 <div class="row no-gutter">
-  <div class="small-4 columns" id="article-brand"></div>
-  <div class="small-4 columns" id="video-brand"></div>
-  <div class="small-4 columns" id="promo-brand"></div>
+  <div class="small-6 columns" id="article-brand"></div>
+  <div class="small-6 columns" id="promo-brand"></div>
 </div>
 
 <div class="full-width-spacer"></div>
 
 <div class="row no-gutter">
 
-  <div class="small-4 columns" id="article-link" data-link>
+  <div class="small-6 columns" id="article-link" data-link>
     <div class="image">
       <% link_to sitemap.find_resource_by_path("/articles.html") do %>
         <%= image_tag 'homepage/clickhere.png' %>
@@ -22,25 +21,11 @@
     </div>
   </div>
 
-  <div class="small-4 columns" id="video-link" data-link>
-    <div class="image">
+  <div class="small-6 columns" id="promo-link" data-link>
+    <div class="promo">
       <% link_to "#" do %>
-        <%= image_tag 'homepage/clickhere.png' %>
+        .
       <% end %>
-    </div>
-    <div class="body">
-      <span class="big">Δείτε</span><br>για τον καφέ
-    </div>
-  </div>
-
-  <div class="small-4 columns" id="promo-link" data-link>
-    <div class="image">
-      <% link_to "#" do %>
-        <%= image_tag lorem.image("220x220") %>
-      <% end %>
-    </div>
-    <div class="body">
-       <%= image_tag lorem.image("220x100", color: "FF0000/ffffff") %>
     </div>
   </div>
 

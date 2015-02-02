@@ -1,3 +1,5 @@
+require './flipbookizer.rb'
+
 activate :deploy do |deploy|
   deploy.method = :git
   deploy.remote   = "github" # remote name or git url, default: origin
@@ -26,6 +28,7 @@ set :relative_links, true
 
 
 configure :build do
+  activate :copy_flipbook
   activate :asset_hash
   activate :minify_css
   activate :minify_javascript

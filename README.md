@@ -27,3 +27,9 @@ $ bower install
 ``` bash
 $ bundle exec middleman s
 ```
+
+Προετοιμασία Flipbook:
+----------------------
+
+* Μετονομασία του `index.html` σε `show.html`.
+* Προσθήκη στο `show.html`: `<a href="../homepage.html" style="position: fixed; top: 0; right: 0; border-bottom-left-radius: 5px; display: block; padding: 10px 20px 10px 10px; background: #1C242E; color: white; text-decoration: none; font-family: sans-serif">← Πίσω στην αρχική οθόνη</a>`

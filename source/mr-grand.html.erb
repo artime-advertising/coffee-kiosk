@@ -1,14 +1,15 @@
 ---
 layout: 'mrgrand-index'
 ---
-<img src="http://placehold.it/1300x220">
+
+<%= image_tag 'mrgrand/header.jpg' %>
 
 <div class="row no-gutter product-list">
 	<div class="small-4 columns">
 		<div class="product first">
 			<%= image_tag 'mrgrand/java.jpg', class: 'preview' %>
 			<h3>Καφές<br/>Φίλτρου</h3>
-			<% link_to "#", class: 'link' do %>
+			<% link_to "mr-grand/filter-coffee.html", class: 'link' do %>
 				<%= image_tag "controls/index-pointer.png" %>
 			<% end %>
 		</div>
@@ -17,7 +18,7 @@ layout: 'mrgrand-index'
 		<div class="product second">
 			<%= image_tag 'mrgrand/coffee-heart.jpg',  class: 'preview' %>
 			<h3>Ελληνικός<br/>Καφές</h3>
-			<% link_to "#", class: 'link' do %>
+			<% link_to "mr-grand/greek-coffee.html", class: 'link' do %>
 				<%= image_tag "controls/index-pointer.png" %>
 			<% end %>
 		</div>
@@ -26,7 +27,7 @@ layout: 'mrgrand-index'
 		<div class="product">
 			<%= image_tag 'mrgrand/cofee.jpg', class: 'preview' %>
 			<h3>Στιγμιαίος<br/>Καφές</h3>
-			<% link_to "#", class: 'link' do %>
+			<% link_to "mr-grand/instant-coffee.html", class: 'link' do %>
 				<%= image_tag "controls/index-pointer.png" %>
 			<% end %>
 		</div>

@@ -71,6 +71,11 @@
     @include homepage-control(#C49A6C, #A97B50, $dark-brown, right);
   }
 
+  #back-to-mr-grand {
+    @include homepage-control(white, $red, white);
+    color: $red;
+  }
+
 }
 
 .articles #bottom-nav-bar {

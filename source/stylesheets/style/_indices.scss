@@ -1,4 +1,4 @@
-.articles, .videos {
+.mr-grand, .articles, .videos {
   .top-primary-bar {
     color: white;
     position: relative;
@@ -33,6 +33,16 @@
 
   }
 
+}
+
+.mr-grand {
+  .top-primary-bar {
+    .title {
+      background: $red;
+      height: 150px;
+      border-bottom: 5px solid white;
+    }
+  }
 }
 
 .articles {

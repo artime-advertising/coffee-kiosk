@@ -1,0 +1,7 @@
+<% wrap_layout :layout do %>
+  <%= partial "shared/mr_grand/top_bar", locals: {title: "MR Grand"} %>
+
+  <%= yield %>
+
+  <%= partial "shared/bottom_bar", locals: {available_controls: [:homepage]} %>
+<% end %>

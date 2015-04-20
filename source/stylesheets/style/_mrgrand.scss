@@ -51,6 +51,16 @@
 			margin-top: 30px;
 		}
 
+		&.inside {
+			.product {
+				background: image-url('images/mrgrand/product-background.jpg') repeat-x top center;
+				padding-bottom: 150px;
+				h3 {
+					span { font-weight: 100;}
+				}
+			}
+		}
 
 	}
+
 }

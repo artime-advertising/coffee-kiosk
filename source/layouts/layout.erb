@@ -1,5 +1,5 @@
 <!doctype html>
-<html>
+<html lang="el">
   <head>
     <meta charset="utf-8">
 
@@ -11,7 +11,7 @@
     <%= javascript_include_tag  "app" %>
   </head>
 
-  <body class="<%= page_classes %>">
+  <body class="<%= page_classes %>" ondragstart="return false;" ondrop="return false;">
     <div id="application-container">
       <%= yield %>
     </div>
